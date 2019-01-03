@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name dvrk)(type Legacy)(uri ${KIPRJMOD}/dvrk.lib)(options "")(descr ""))
+)
