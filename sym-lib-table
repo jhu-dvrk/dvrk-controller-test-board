@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name dvrk)(type Legacy)(uri ${KIPRJMOD}/dvrk.lib)(options "")(descr ""))
+  (lib (name dvrk-logo)(type Legacy)(uri ${KIPRJMOD}/dvrk-logo.lib)(options "")(descr ""))
 )

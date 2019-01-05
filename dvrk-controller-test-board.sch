@@ -1184,4 +1184,15 @@ F 3 "~" H 9600 3300 50  0001 C CNN
 	1    9600 3300
 	1    0    0    -1  
 $EndComp
+$Comp
+L dvrk-logo:LOGO #G?
+U 1 1 5C5392A2
+P 6550 7050
+F 0 "#G?" H 6550 6947 60  0001 C CNN
+F 1 "LOGO" H 6550 7153 60  0001 C CNN
+F 2 "dvrk:dvrk-logo" H 6550 7050 50  0001 C CNN
+F 3 "" H 6550 7050 50  0001 C CNN
+	1    6550 7050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
