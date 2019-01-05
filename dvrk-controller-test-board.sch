@@ -6,8 +6,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "dVRK Controller Test Board"
-Date ""
-Rev "0"
+Date "2019-01-04"
+Rev "1"
 Comp "Johns Hopkins University"
 Comment1 ""
 Comment2 ""
@@ -435,17 +435,17 @@ Text Label 4400 2300 0    50   ~ 0
 SJ2_RELn
 Text Label 1400 2500 0    50   ~ 0
 INST_1WIRE
-Text Label 1000 5450 0    50   ~ 0
+Text Label 1350 5700 0    50   ~ 0
 INST_LOOPBACK
-Text Label 2400 5650 0    50   ~ 0
+Text Label 2750 5900 0    50   ~ 0
 SJ2_REL
-Text Label 1000 6050 0    50   ~ 0
+Text Label 1350 6300 0    50   ~ 0
 SJ2_RELn
 Text Label 7650 6000 0    50   ~ 0
 HE1
 Text Label 7650 6100 0    50   ~ 0
 HE2
-Text Label 2400 5250 0    50   ~ 0
+Text Label 2750 5500 0    50   ~ 0
 ARM_PRESENT
 Text Label 5400 3100 0    50   ~ 0
 VCC_A
@@ -579,7 +579,7 @@ F 3 "" H 4900 5500 50  0001 C CNN
 	1    4900 5500
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2400 5550
+NoConn ~ 2750 5800
 $Comp
 L Reference_Voltage:MAX6103 U5
 U 1 1 5C388B48
@@ -661,9 +661,9 @@ Wire Wire Line
 	7600 5550 7650 5550
 Wire Wire Line
 	7650 5550 7650 5900
-Text Label 2400 5450 0    50   ~ 0
+Text Label 2750 5700 0    50   ~ 0
 DAC1
-Text Label 2400 5350 0    50   ~ 0
+Text Label 2750 5600 0    50   ~ 0
 DAC2
 Text Label 6650 4300 0    50   ~ 0
 VPOTA
@@ -830,39 +830,39 @@ Wire Wire Line
 	10000 2050 10000 2150
 Text Label 10100 4500 0    50   ~ 0
 MOTOR1_FB
-Text Label 2400 5750 0    50   ~ 0
+Text Label 2750 6000 0    50   ~ 0
 MOTOR1_FB
 $Comp
 L power:+5V #PWR04
 U 1 1 5C34AC27
-P 2650 4950
-F 0 "#PWR04" H 2650 4800 50  0001 C CNN
-F 1 "+5V" H 2665 5123 50  0000 C CNN
-F 2 "" H 2650 4950 50  0001 C CNN
-F 3 "" H 2650 4950 50  0001 C CNN
-	1    2650 4950
+P 3000 5200
+F 0 "#PWR04" H 3000 5050 50  0001 C CNN
+F 1 "+5V" H 3015 5373 50  0000 C CNN
+F 2 "" H 3000 5200 50  0001 C CNN
+F 3 "" H 3000 5200 50  0001 C CNN
+	1    3000 5200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2650 4950 2400 4950
+	3000 5200 2750 5200
 $Comp
 L dk_Alarms-Buzzers-and-Sirens:PKMCS0909E4000-R1 BZ1
 U 1 1 5C350037
-P 2100 6750
-F 0 "BZ1" H 2440 6858 60  0000 L CNN
-F 1 "PKMCS0909E4000-R1" H 2440 6752 60  0000 L CNN
-F 2 "digikey-footprints:Piezo_9x9mm_PKMCS0909E4000-R1" H 2300 6950 60  0001 L CNN
-F 3 "https://www.murata.com/~/media/webrenewal/products/sound/sounder/vppt-buzj083-d.ashx" H 2300 7050 60  0001 L CNN
-F 4 "490-9647-1-ND" H 2300 7150 60  0001 L CNN "Digi-Key_PN"
-F 5 "PKMCS0909E4000-R1" H 2300 7250 60  0001 L CNN "MPN"
-F 6 "Audio Products" H 2300 7350 60  0001 L CNN "Category"
-F 7 "Alarms, Buzzers, and Sirens" H 2300 7450 60  0001 L CNN "Family"
-F 8 "https://www.murata.com/~/media/webrenewal/products/sound/sounder/vppt-buzj083-d.ashx" H 2300 7550 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/murata-electronics-north-america/PKMCS0909E4000-R1/490-9647-1-ND/4878401" H 2300 7650 60  0001 L CNN "DK_Detail_Page"
-F 10 "AUDIO PIEZO TRANSDUCER 12.5V SMD" H 2300 7750 60  0001 L CNN "Description"
-F 11 "Murata Electronics North America" H 2300 7850 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 2300 7950 60  0001 L CNN "Status"
-	1    2100 6750
+P 2250 7350
+F 0 "BZ1" H 2590 7458 60  0000 L CNN
+F 1 "PKMCS0909E4000-R1" H 2590 7352 60  0000 L CNN
+F 2 "digikey-footprints:Piezo_9x9mm_PKMCS0909E4000-R1" H 2450 7550 60  0001 L CNN
+F 3 "https://www.murata.com/~/media/webrenewal/products/sound/sounder/vppt-buzj083-d.ashx" H 2450 7650 60  0001 L CNN
+F 4 "490-9647-1-ND" H 2450 7750 60  0001 L CNN "Digi-Key_PN"
+F 5 "PKMCS0909E4000-R1" H 2450 7850 60  0001 L CNN "MPN"
+F 6 "Audio Products" H 2450 7950 60  0001 L CNN "Category"
+F 7 "Alarms, Buzzers, and Sirens" H 2450 8050 60  0001 L CNN "Family"
+F 8 "https://www.murata.com/~/media/webrenewal/products/sound/sounder/vppt-buzj083-d.ashx" H 2450 8150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/murata-electronics-north-america/PKMCS0909E4000-R1/490-9647-1-ND/4878401" H 2450 8250 60  0001 L CNN "DK_Detail_Page"
+F 10 "AUDIO PIEZO TRANSDUCER 12.5V SMD" H 2450 8350 60  0001 L CNN "Description"
+F 11 "Murata Electronics North America" H 2450 8450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2450 8550 60  0001 L CNN "Status"
+	1    2250 7350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -888,12 +888,12 @@ $EndComp
 $Comp
 L power:GND #PWR01
 U 1 1 5C3555F5
-P 2000 6750
-F 0 "#PWR01" H 2000 6500 50  0001 C CNN
-F 1 "GND" H 2005 6577 50  0000 C CNN
-F 2 "" H 2000 6750 50  0001 C CNN
-F 3 "" H 2000 6750 50  0001 C CNN
-	1    2000 6750
+P 2150 7350
+F 0 "#PWR01" H 2150 7100 50  0001 C CNN
+F 1 "GND" H 2155 7177 50  0000 C CNN
+F 2 "" H 2150 7350 50  0001 C CNN
+F 3 "" H 2150 7350 50  0001 C CNN
+	1    2150 7350
 	1    0    0    -1  
 $EndComp
 Text Label 4150 4600 0    50   ~ 0
@@ -904,9 +904,9 @@ Wire Wire Line
 	4400 4600 4150 4600
 Wire Wire Line
 	4400 5900 4150 5900
-Text Label 1000 5250 0    50   ~ 0
+Text Label 1350 5500 0    50   ~ 0
 ENCA
-Text Label 1000 5350 0    50   ~ 0
+Text Label 1350 5600 0    50   ~ 0
 ENCB
 $Comp
 L power:+5V #PWR012
@@ -930,15 +930,15 @@ F 3 "" H 4900 7600 50  0001 C CNN
 	1    4900 7600
 	1    0    0    -1  
 $EndComp
-Text Label 1650 6650 0    50   ~ 0
+Text Label 1800 7250 0    50   ~ 0
 BUZZER
 Wire Wire Line
-	2000 6650 1650 6650
-Text Label 1000 5950 0    50   ~ 0
+	2150 7250 1800 7250
+Text Label 1350 6200 0    50   ~ 0
 BUZZER
 Text Label 5300 7300 0    50   ~ 0
 HEATSINK_TEMP
-Text Label 1000 5150 0    50   ~ 0
+Text Label 1350 5400 0    50   ~ 0
 HEATSINK_TEMP
 $Comp
 L Device:C C1
@@ -1096,31 +1096,31 @@ $EndComp
 $Comp
 L power:+5V #PWR02
 U 1 1 5C3B1D2A
-P 2050 4200
-F 0 "#PWR02" H 2050 4050 50  0001 C CNN
-F 1 "+5V" H 2065 4373 50  0000 C CNN
-F 2 "" H 2050 4200 50  0001 C CNN
-F 3 "" H 2050 4200 50  0001 C CNN
-	1    2050 4200
+P 2400 4450
+F 0 "#PWR02" H 2400 4300 50  0001 C CNN
+F 1 "+5V" H 2415 4623 50  0000 C CNN
+F 2 "" H 2400 4450 50  0001 C CNN
+F 3 "" H 2400 4450 50  0001 C CNN
+	1    2400 4450
 	1    0    0    -1  
 $EndComp
-Text Label 1750 4200 0    50   ~ 0
+Text Label 2100 4450 0    50   ~ 0
 VCC_A
 Wire Wire Line
-	1750 4200 2050 4200
+	2100 4450 2400 4450
 $Comp
 L power:+3.3V #PWR05
 U 1 1 5C49D0FE
-P 2650 5950
-F 0 "#PWR05" H 2650 5800 50  0001 C CNN
-F 1 "+3.3V" H 2665 6123 50  0000 C CNN
-F 2 "" H 2650 5950 50  0001 C CNN
-F 3 "" H 2650 5950 50  0001 C CNN
-	1    2650 5950
+P 3000 6200
+F 0 "#PWR05" H 3000 6050 50  0001 C CNN
+F 1 "+3.3V" H 3015 6373 50  0000 C CNN
+F 2 "" H 3000 6200 50  0001 C CNN
+F 3 "" H 3000 6200 50  0001 C CNN
+	1    3000 6200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2650 5950 2400 5950
+	3000 6200 2750 6200
 Wire Wire Line
 	2400 3400 2400 3500
 Wire Wire Line
@@ -1134,33 +1134,33 @@ Wire Wire Line
 $Comp
 L dvrk:STNucleo-432KC U1
 U 1 1 5C2EDAAD
-P 2000 4550
-F 0 "U1" H 2000 4715 50  0000 C CNN
-F 1 "STNucleo-432KC" H 2000 4624 50  0000 C CNN
-F 2 "dvrk:STNucleo32" H 1900 4600 50  0001 C CNN
-F 3 "" H 1900 4600 50  0001 C CNN
-	1    2000 4550
+P 2350 4800
+F 0 "U1" H 2350 4965 50  0000 C CNN
+F 1 "STNucleo-432KC" H 2350 4874 50  0000 C CNN
+F 2 "dvrk:STNucleo32" H 2250 4850 50  0001 C CNN
+F 3 "" H 2250 4850 50  0001 C CNN
+	1    2350 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1600 6050 1000 6050
+	1950 6300 1350 6300
 Wire Wire Line
-	1000 5950 1600 5950
+	1350 6200 1950 6200
 Wire Wire Line
-	1600 5850 1000 5850
+	1950 6100 1350 6100
 Wire Wire Line
-	1000 5750 1600 5750
+	1350 6000 1950 6000
 Wire Wire Line
-	1000 5450 1600 5450
+	1350 5700 1950 5700
 Wire Wire Line
-	1600 5350 1000 5350
+	1950 5600 1350 5600
 Wire Wire Line
-	1600 5150 1000 5150
+	1950 5400 1350 5400
 Wire Wire Line
-	1600 5250 1000 5250
-Text Label 1000 5750 0    50   ~ 0
+	1950 5500 1350 5500
+Text Label 1350 6000 0    50   ~ 0
 SLAVE_CLUTCH
-Text Label 1000 5850 0    50   ~ 0
+Text Label 1350 6100 0    50   ~ 0
 ST_ADAP
 $Comp
 L Mechanical:MountingHole H1
@@ -1195,4 +1195,24 @@ F 3 "" H 6550 7000 50  0001 C CNN
 	1    6550 7000
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	6300 3950 6300 6500
+Wire Notes Line
+	8100 3900 8100 6500
+Text Notes 7550 3450 0    100  ~ 0
+dummy\nmotor loads
+Text Notes 9000 2550 0    100  ~ 0
+power\nindicator
+Text Notes 6600 6550 0    100  ~ 0
+pot voltage ref
+Wire Notes Line
+	8850 1000 8850 3400
+Text Notes 8700 5250 0    100  ~ 0
+motor1 detection
+Text Notes 8700 6550 0    100  ~ 0
+instrument chip
+Text Notes 4400 6700 0    100  ~ 0
+encoder diff driver
+Text Notes 4550 7950 0    100  ~ 0
+heatsink temp
 $EndSCHEMATC
