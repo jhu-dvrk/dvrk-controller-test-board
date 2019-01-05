@@ -1,6 +1,47 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Device_C
+#
+DEF Device_C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_LED
+#
+DEF Device_LED D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_R
 #
 DEF Device_R R 0 0 N Y 1 F N
@@ -88,6 +129,43 @@ X ~ 4 300 100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Jumper_SolderJumper_2_Open
+#
+DEF Jumper_SolderJumper_2_Open JP 0 0 Y N 1 F N
+F0 "JP" 0 80 50 H V C CNN
+F1 "Jumper_SolderJumper_2_Open" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SolderJumper*Open*
+$ENDFPLIST
+DRAW
+A -10 0 40 901 -901 0 1 0 N -10 40 -10 -40
+A -10 0 40 901 -901 0 1 0 F -10 40 -10 -40
+A 10 0 40 -899 899 0 1 0 N 10 -40 10 40
+A 10 0 40 -899 899 0 1 0 F 10 -40 10 40
+P 2 0 1 0 -10 40 -10 -40 N
+P 2 0 1 0 10 40 10 -40 N
+X A 1 -150 0 100 R 50 50 1 1 P
+X B 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Mechanical_MountingHole
+#
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
 # Memory_UniqueID_DS2401P
 #
 DEF Memory_UniqueID_DS2401P U 0 40 Y Y 1 F N
@@ -139,6 +217,56 @@ S -200 200 200 -200 0 1 10 f
 X IN 1 -100 300 100 D 50 50 1 1 W
 X OUT 2 300 0 100 L 50 50 1 1 w
 X GND 3 -100 -300 100 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# dk_Alarms-Buzzers-and-Sirens_PKMCS0909E4000-R1
+#
+DEF dk_Alarms-Buzzers-and-Sirens_PKMCS0909E4000-R1 BZ 0 1 Y Y 1 F N
+F0 "BZ" 0 200 60 H V L CNN
+F1 "dk_Alarms-Buzzers-and-Sirens_PKMCS0909E4000-R1" -100 -100 60 H V L CNN
+F2 "digikey-footprints:Piezo_9x9mm_PKMCS0909E4000-R1" 200 200 60 H I L CNN
+F3 "https://www.murata.com/~/media/webrenewal/products/sound/sounder/vppt-buzj083-d.ashx" 200 300 60 H I L CNN
+F4 "490-9647-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "PKMCS0909E4000-R1" 200 500 60 H I L CNN "MPN"
+F6 "Audio Products" 200 600 60 H I L CNN "Category"
+F7 "Alarms, Buzzers, and Sirens" 200 700 60 H I L CNN "Family"
+F8 "https://www.murata.com/~/media/webrenewal/products/sound/sounder/vppt-buzj083-d.ashx" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/murata-electronics-north-america/PKMCS0909E4000-R1/490-9647-1-ND/4878401" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "AUDIO PIEZO TRANSDUCER 12.5V SMD" 200 1000 60 H I L CNN "Description"
+F11 "Murata Electronics North America" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+A 200 50 71 450 -450 0 1 0 N 250 100 250 0
+A 200 50 112 634 -634 0 1 0 N 250 150 250 -50
+S 0 150 100 -50 0 1 0 f
+P 5 0 1 0 100 100 200 150 200 -50 100 0 100 100 f
+X ~ 1 -100 100 100 R 50 50 1 1 I
+X ~ 2 -100 0 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# dk_Temperature-Sensors-Analog-and-Digital-Output_LM35DT_NOPB
+#
+DEF dk_Temperature-Sensors-Analog-and-Digital-Output_LM35DT_NOPB U 0 40 Y Y 1 F N
+F0 "U" -150 250 60 H V C CNN
+F1 "dk_Temperature-Sensors-Analog-and-Digital-Output_LM35DT_NOPB" 100 -300 60 H V L CNN
+F2 "digikey-footprints:TO-220-3" 200 200 60 H I L CNN
+F3 "http://www.ti.com/lit/ds/symlink/lm35.pdf" 200 300 60 H I L CNN
+F4 "LM35DT/NOPB-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "LM35DT/NOPB" 200 500 60 H I L CNN "MPN"
+F6 "Sensors, Transducers" 200 600 60 H I L CNN "Category"
+F7 "Temperature Sensors - Analog and Digital Output" 200 700 60 H I L CNN "Family"
+F8 "http://www.ti.com/lit/ds/symlink/lm35.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/texas-instruments/LM35DT-NOPB/LM35DT-NOPB-ND/362706" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "SENSOR ANALOG 0C-100C TO220-3" 200 1000 60 H I L CNN "Description"
+F11 "Texas Instruments" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S 300 200 -100 -200 0 1 0 f
+X VDD 1 0 300 100 D 50 50 1 1 W
+X GND 2 0 -300 100 U 50 50 1 1 W
+X VOUT 3 400 0 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
@@ -312,6 +440,48 @@ X Z6 153 600 -2200 200 L 50 50 6 1 U
 X a6 154 600 -2300 200 L 50 50 6 1 U
 X b6 155 600 -2400 200 L 50 50 6 1 U
 X c6 156 600 -2500 200 L 50 50 6 1 U
+ENDDRAW
+ENDDEF
+#
+# dvrk_STNucleo-432KC
+#
+DEF dvrk_STNucleo-432KC U 0 40 Y Y 1 F N
+F0 "U" -300 350 50 H V C CNN
+F1 "dvrk_STNucleo-432KC" 0 250 50 H V C CNN
+F2 "" -100 50 50 H I C CNN
+F3 "" -100 50 50 H I C CNN
+DRAW
+S -300 0 300 -1600 0 1 0 f
+X PA9 1 -400 -100 100 R 50 50 1 1 U
+X PC14 10 -400 -1000 100 R 50 50 1 1 U
+X PC15 11 -400 -1100 100 R 50 50 1 1 U
+X PA8 12 -400 -1200 100 R 50 50 1 1 U
+X PA11 13 -400 -1300 100 R 50 50 1 1 U
+X PB5 14 -400 -1400 100 R 50 50 1 1 U
+X PB4 15 -400 -1500 100 R 50 50 1 1 U
+X PB3 16 400 -1500 100 L 50 50 1 1 U
+X +3V3 17 400 -1400 100 L 50 50 1 1 U
+X AREF 18 400 -1300 100 L 50 50 1 1 U
+X PA0 19 400 -1200 100 L 50 50 1 1 U
+X PA10 2 -400 -200 100 R 50 50 1 1 U
+X PA1 20 400 -1100 100 L 50 50 1 1 U
+X PA3 21 400 -1000 100 L 50 50 1 1 U
+X PA4 22 400 -900 100 L 50 50 1 1 U
+X PA5 23 400 -800 100 L 50 50 1 1 U
+X PA6 24 400 -700 100 L 50 50 1 1 U
+X PA7 25 400 -600 100 L 50 50 1 1 U
+X PA2 26 400 -500 100 L 50 50 1 1 U
+X +5V 27 400 -400 100 L 50 50 1 1 U
+X ~RST 28 400 -300 100 L 50 50 1 1 U
+X GND 29 400 -200 100 L 50 50 1 1 U
+X ~RST 3 -400 -300 100 R 50 50 1 1 U
+X VIN 30 400 -100 100 L 50 50 1 1 U
+X GND 4 -400 -400 100 R 50 50 1 1 U
+X PA12 5 -400 -500 100 R 50 50 1 1 U
+X PB0 6 -400 -600 100 R 50 50 1 1 U
+X PB7 7 -400 -700 100 R 50 50 1 1 U
+X PB6 8 -400 -800 100 R 50 50 1 1 U
+X PB1 9 -400 -900 100 R 50 50 1 1 U
 ENDDRAW
 ENDDEF
 #
