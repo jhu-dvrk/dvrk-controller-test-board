@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "dVRK Controller Test Board"
 Date "2019-01-04"
-Rev "1"
+Rev "1.1"
 Comp "Johns Hopkins University"
 Comment1 ""
 Comment2 ""
@@ -441,10 +441,8 @@ Text Label 2750 5900 0    50   ~ 0
 SJ2_REL
 Text Label 1350 6300 0    50   ~ 0
 SJ2_RELn
-Text Label 7650 6000 0    50   ~ 0
+Text Label 7650 4950 0    50   ~ 0
 HE1
-Text Label 7650 6100 0    50   ~ 0
-HE2
 Text Label 2750 5500 0    50   ~ 0
 ARM_PRESENT
 Text Label 5400 3100 0    50   ~ 0
@@ -503,8 +501,6 @@ F 3 "http://pdfserv.maximintegrated.com/en/ds/DS2401.pdf" H 9250 6150 50  0001 C
 	1    9400 5900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9100 5800 8300 5800
 $Comp
 L power:GND #PWR020
 U 1 1 5C3C0652
@@ -616,8 +612,6 @@ $EndComp
 Wire Wire Line
 	7600 4600 7650 4600
 Connection ~ 7650 4600
-Wire Wire Line
-	7650 4600 7650 4800
 Wire Wire Line
 	7600 5900 7650 5900
 Connection ~ 7650 5900
@@ -1215,4 +1209,52 @@ Text Notes 4400 6700 0    100  ~ 0
 encoder diff driver
 Text Notes 4550 7950 0    100  ~ 0
 heatsink temp
+Text Notes 7250 4750 0    50   ~ 0
+2.5V
+Text Notes 7250 6050 0    50   ~ 0
+3V
+Text Label 7650 6100 0    50   ~ 0
+HE2
+Wire Wire Line
+	7650 4600 7650 4950
+$Comp
+L Jumper:SolderJumper_2_Open JP5
+U 1 1 5C335644
+P 8950 5800
+F 0 "JP5" H 8950 6005 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 8950 5914 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8950 5800 50  0001 C CNN
+F 3 "~" H 8950 5800 50  0001 C CNN
+	1    8950 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 5800 8300 5800
+Text Label 2750 5400 0    50   ~ 0
+INST_1WIRE
+NoConn ~ 2750 5300
+NoConn ~ 1950 5800
+NoConn ~ 1950 5900
+NoConn ~ 2750 6300
+NoConn ~ 1950 4900
+NoConn ~ 1950 5000
+Wire Wire Line
+	5400 3100 5400 3000
+Connection ~ 5400 2800
+Wire Wire Line
+	5400 2800 5400 2700
+Connection ~ 5400 2900
+Wire Wire Line
+	5400 2900 5400 2800
+Connection ~ 5400 3000
+Wire Wire Line
+	5400 3000 5400 2900
+Wire Wire Line
+	5400 3200 5400 3300
+Connection ~ 5400 3300
+Wire Wire Line
+	5400 3300 5400 3400
+Connection ~ 5400 3400
+Wire Wire Line
+	5400 3400 5400 3500
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=Fri 04 Jan 2019 11:49:27 PM EST
+update=Sun Jan  6 20:44:33 2019
 version=1
 last_client=kicad
 [general]
@@ -75,10 +75,10 @@ SolderPasteRatio=-0
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=./
+PlotDirectoryName=generated/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
 SpiceAjustPassiveValues=0
-LabSize=100
+LabSize=50
 ERC_TestSimilarLabels=1
